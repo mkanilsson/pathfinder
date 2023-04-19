@@ -28,6 +28,11 @@ Dependencies:
 | `L`                         | Load map from `map.json`       |
 | `Q`                         | Quit program                   |
 
+## Customization
+
+### Colors
+
+`colors.json` is loaded at start.
 
 ## TODO
 
@@ -35,11 +40,11 @@ Dependencies:
   * [ ] Dijkstra
   * [ ] DFS
   * [ ] BFS
-* [ ] UI
+* [-] UI
   * [ ] Delay slider
   * [ ] Save/Load file picker
   * [ ] Zoom
-  * [ ] Custom colors
+  * [X] Custom colors
 * [ ] General
   * [ ] Generate maze
   * [ ] Better error handling

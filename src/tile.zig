@@ -34,13 +34,13 @@ pub const Tile = struct {
     pub fn draw(self: Tile, renderer: *const sdl.Renderer, x: u32, y: u32) !void {
         var color: sdl.Color = undefined;
         switch (self.@"type") {
-            TileType.Empty => color = config.EmptyTileColor,
-            TileType.Wall => color = config.WallTileColor,
-            TileType.Start => color = config.StartTileColor,
-            TileType.Finish => color = config.FinishTileColor,
-            TileType.Path => color = config.PathTileColor,
-            TileType.Open => color = config.OpenTileColor,
-            TileType.Closed => color = config.ClosedTileColor,
+            TileType.Empty => color = config.colors.empty,
+            TileType.Wall => color = config.colors.wall,
+            TileType.Start => color = config.colors.start,
+            TileType.Finish => color = config.colors.finish,
+            TileType.Path => color = config.colors.path,
+            TileType.Open => color = config.colors.open,
+            TileType.Closed => color = config.colors.closed,
         }
 
         const rect = sdl.Rect {

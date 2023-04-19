@@ -181,6 +181,8 @@ fn handleInput() void {
 
 
 pub fn main() !void {
+    config.colors = try config.ColorConfig.load(gpa.allocator());
+
     try sdl.init();
     defer sdl.deinit();
 
@@ -254,12 +256,7 @@ pub fn main() !void {
 
         }
 
-        try renderer.setDrawColor(.{
-            .r = 0x28,
-            .g = 0x28,
-            .b = 0x28,
-            .a = 0xFF,
-        });
+        try renderer.setDrawColor(config.colors.background);
 
         renderer.clear();
 
