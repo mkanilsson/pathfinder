@@ -1,4 +1,4 @@
-# A* Pathfinding Visualizer in zig
+# Pathfinding Visualizer in zig
 
 > First time writting zig and I have no clue about what I'm doing.
 
@@ -36,16 +36,16 @@ Dependencies:
 
 ## TODO
 
-* [ ] More Algorithms
+* More Algorithms
   * [ ] Dijkstra
   * [ ] DFS
   * [ ] BFS
-* [-] UI
+* UI
   * [ ] Delay slider
   * [ ] Save/Load file picker
   * [ ] Zoom
   * [X] Custom colors
-* [ ] General
+* General
   * [ ] Generate maze
   * [ ] Better error handling
   * [ ] Dynamic map size
